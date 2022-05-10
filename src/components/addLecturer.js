@@ -1,5 +1,4 @@
 import React from 'react'
-
 const AddLecturer = () => {
   return (
     <div className='lectureMain'>
@@ -10,7 +9,8 @@ const AddLecturer = () => {
             </div>
         <div className='addLecturerPane'>
             <h3 id='lecturerTitle'>Add A Lecturer</h3>
-            <p id='lecturerFill'>Fill in the data for a lecturer.</p>
+            <p id='lecturerFill'>Fill in the data for a lecturer.</p>
+            <hr className='horizontalRuler'/>
         </div>
     </div>
   )
