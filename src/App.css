@@ -1,8 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@300;400&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  overflow: hidden;
+}
 .lectureMain {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: rgba(235, 232, 232, 0.479);
+}
+input:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
 }
 .navPane {
   background-color: rgba(36, 39, 48, 0.8);
@@ -16,11 +30,11 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  margin-top: 4%;
+  margin-top: 4.5%;
   margin-left: 4%;
 }
 .horizontalRuler {
-  top: 9.5rem;
+  top: 10rem;
   margin-left: 4%;
   width: 92%;
   position: absolute;
@@ -32,7 +46,7 @@
   font-size: 0.8rem;
   font-weight: 300;
   color: #575f6e;
-  margin-top: -1.5%;
+  margin-top: 0.3%;
   margin-left: 4%;
 }
 .addLecturerPane {
@@ -40,8 +54,10 @@
   left: 19%;
   top: 1%;
   background-color: rgb(255, 255, 255);
-  min-height: 99vh;
-  width: 81%;
+  height: 99vh;
+  width: 80%;
+  border-top: 0.5px solid rgb(239, 233, 233);
+  border-right: 0.5px solid rgb(239, 233, 233);
   border-radius: 15px 10px 15px 0;
   z-index: 2;
   overflow: hidden;
@@ -50,7 +66,7 @@
   display: flex;
   position: relative;
   min-height: 10rem;
-  top: 6rem;
+  top: 7rem;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
@@ -72,6 +88,7 @@
   border: none;
   width: 120%;
   border-bottom: 1px solid #aab3b7;
+  background: white;
   font-family: Roboto;
   font-weight: 400;
   margin-top: 1rem;
@@ -82,25 +99,26 @@
 .detailsInput:focus {
   outline: none;
 }
+
 .secondDetails {
   margin-top: 2rem;
 }
 .nextField {
   margin-left: 15%;
 }
-.bottomRuler{
+.bottomRuler {
   margin-left: 4%;
   width: 92%;
   background-color: #c4c4c4;
   z-index: 2;
   position: relative;
-  top: 8rem;
+  top: 9rem;
 }
-#addLecturerBtn{
+#addLecturerBtn {
   position: relative;
   font-family: Poppins, sans-serif;
   font-weight: 500;
-  top: 11rem;
+  top: 12rem;
   margin-left: 4%;
   padding: 1%;
 }
