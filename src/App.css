@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@300;400&display=swap');
-.lectureMain{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@300;400&display=swap");
+.lectureMain {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
-.navPane{
+.navPane {
   background-color: rgba(36, 39, 48, 0.8);
   height: 100%;
   width: 20%;
@@ -12,33 +12,30 @@
   z-index: 0;
   overflow: hidden;
 }
-#lecturerTitle{
-  font-family: 'Poppins', sans-serif;  
-font-size: 1.6rem;  
-font-weight: 700;
+#lecturerTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-top: 4%;
-  margin-left:4%;
+  margin-left: 4%;
 }
-.horizontalRuler{
+.horizontalRuler {
   top: 9.5rem;
   margin-left: 4%;
   width: 92%;
-  display: flex;
-  align-self: center;
-  flex-direction: row;
   position: absolute;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   z-index: 2;
 }
-#lecturerFill{
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.8rem;  
+#lecturerFill {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
   font-weight: 300;
-  color: #575F6E;
+  color: #575f6e;
   margin-top: -1.5%;
-  margin-left:4%;
+  margin-left: 4%;
 }
-.addLecturerPane{
+.addLecturerPane {
   position: absolute;
   left: 19%;
   top: 1%;
@@ -47,49 +44,63 @@ font-weight: 700;
   width: 81%;
   border-radius: 15px 10px 15px 0;
   z-index: 2;
-  /* border: 1px solid red; */
   overflow: hidden;
 }
-.fillField{
+.fillField {
   display: flex;
-  flex-direction: row;
   position: relative;
   min-height: 10rem;
-  border: 1px solid red;
   top: 6rem;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
-.eachField{
+.eachField {
   margin-left: 4%;
 }
-.detailsLabel{
+.detailsLabel {
   font-family: Poppins, sans-serif;
   font-weight: 600;
 }
-.text-muted{
+.text-muted {
   position: relative;
   font-family: Poppins, sans-serif;
   font-weight: 300;
   top: -0.5rem;
   font-size: x-small;
 }
-.detailsInput{
-   border: none;
+.detailsInput {
+  border: none;
+  width: 120%;
   border-bottom: 1px solid #aab3b7;
   font-family: Roboto;
   font-weight: 400;
-  margin-top: 1rem;  
+  margin-top: 1rem;
 }
-.detailsInput::placeholder{
+.detailsInput::placeholder {
   color: #3c3c3ed9;
 }
-.detailsInput:focus{
+.detailsInput:focus {
   outline: none;
 }
-.secondDetails{
-  margin-top: 2rem; 
+.secondDetails {
+  margin-top: 2rem;
 }
-.nextField{
+.nextField {
   margin-left: 15%;
+}
+.bottomRuler{
+  margin-left: 4%;
+  width: 92%;
+  background-color: #c4c4c4;
+  z-index: 2;
+  position: relative;
+  top: 8rem;
+}
+#addLecturerBtn{
+  position: relative;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  top: 11rem;
+  margin-left: 4%;
+  padding: 1%;
 }

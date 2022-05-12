@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 
 const AddLecturer = () => {
   return (
@@ -88,6 +88,8 @@ const AddLecturer = () => {
             </Form>
           </div>
         </div>
+        <hr className="bottomRuler"/>
+        <Button id='addLecturerBtn'>Add Lecturer</Button>
       </div>
     </div>
   );
