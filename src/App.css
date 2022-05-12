@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@300;400&display=swap');
+.lectureMain{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
 .navPane{
   background-color: rgba(36, 39, 48, 0.8);
-  min-height: 100vh;
+  height: 100%;
   width: 20%;
   border-radius: 15px 30px 0 0;
   z-index: 0;
+  overflow: hidden;
 }
 #lecturerTitle{
   font-family: 'Poppins', sans-serif;  
@@ -14,14 +20,14 @@ font-weight: 700;
   margin-left:4%;
 }
 .horizontalRuler{
-  top: 10rem;
-  margin-left: 2rem;
-  width: 95%;
+  top: 9.5rem;
+  margin-left: 4%;
+  width: 92%;
   display: flex;
   align-self: center;
   flex-direction: row;
   position: absolute;
-  background-color: black;
+  background-color: #C4C4C4;
   z-index: 2;
 }
 #lecturerFill{
@@ -41,4 +47,49 @@ font-weight: 700;
   width: 81%;
   border-radius: 15px 10px 15px 0;
   z-index: 2;
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+.fillField{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  min-height: 10rem;
+  border: 1px solid red;
+  top: 6rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.eachField{
+  margin-left: 4%;
+}
+.detailsLabel{
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+.text-muted{
+  position: relative;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  top: -0.5rem;
+  font-size: x-small;
+}
+.detailsInput{
+   border: none;
+  border-bottom: 1px solid #aab3b7;
+  font-family: Roboto;
+  font-weight: 400;
+  margin-top: 1rem;  
+}
+.detailsInput::placeholder{
+  color: #3c3c3ed9;
+}
+.detailsInput:focus{
+  outline: none;
+}
+.secondDetails{
+  margin-top: 2rem; 
+}
+.nextField{
+  margin-left: 15%;
 }
