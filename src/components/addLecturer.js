@@ -27,7 +27,7 @@ const AddLecturer = () => {
                 <Form.Control
                   type="text"
                   className="detailsInput"
-                  placeholder= {<BsFillPersonFill/>}
+                  placeholder= "Name"
                 />
                 <br />
                 <Form.Control
