@@ -64,14 +64,17 @@ input:-webkit-autofill{
 }
 .fillField {
   display: flex;
+  gap: 8%;
+  flex-wrap: wrap;
   position: relative;
-  min-height: 10rem;
+  min-height: 9rem;
   top: 7rem;
   width: 100%;
   background-color: rgb(255, 255, 255);
 }
 .eachField {
   margin-left: 4%;
+  margin-bottom: 5%;
 }
 .detailsLabel {
   font-family: Poppins, sans-serif;
@@ -103,16 +106,13 @@ input:-webkit-autofill{
 .secondDetails {
   margin-top: 2rem;
 }
-.nextField {
-  margin-left: 11.5%;
-}
 .bottomRuler {
   margin-left: 4%;
   width: 92%;
   background-color: #c4c4c4;
   z-index: 2;
   position: relative;
-  top: 9rem;
+  top: 7.5rem;
 }
 #addLecturerBtn {
   position: relative;

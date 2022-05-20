@@ -1,6 +1,5 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
-import {BsFillPersonFill} from 'react-icons/bs'
 
 const AddLecturer = () => {
   return (
