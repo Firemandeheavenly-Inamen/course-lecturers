@@ -1,11 +1,22 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import { IoMdSchool } from "react-icons/io";
+import { GiTeacher } from "react-icons/gi";
+import {BiBook} from 'react-icons/bi'
+import {AiOutlineSchedule} from 'react-icons/ai'
 
 const AddLecturer = () => {
   return (
     <div className="lectureMain">
       <div className="navPane">
-        <nav></nav>
+        <nav className="navOptions">
+          <ul className="navItems">
+          <li className="navItem"><div className="navItemPosition"><IoMdSchool className="navIcon"/>Add a Lecturer</div></li>
+          <li className="navItem"><div className="navItemPosition"><GiTeacher className="navIcon"/>Lectures</div></li>
+          <li className="navItem"><div className="navItemPosition"><BiBook className="navIcon"/>Course</div></li>
+          <li className="navItem"><div className="navItemPosition"><AiOutlineSchedule className="navIcon"/>Schedule</div></li>
+          </ul>
+        </nav>
       </div>
       <div className="addLecturerPane">
         <h3 id="lecturerTitle">Add A Lecturer</h3>
@@ -26,7 +37,7 @@ const AddLecturer = () => {
                 <Form.Control
                   type="text"
                   className="detailsInput"
-                  placeholder= "Name"
+                  placeholder="Name"
                 />
                 <br />
                 <Form.Control
@@ -88,8 +99,8 @@ const AddLecturer = () => {
             </Form>
           </div>
         </div>
-        <hr className="bottomRuler"/>
-        <Button id='addLecturerBtn'>Add Lecturer</Button>
+        <hr className="bottomRuler" />
+        <Button id="addLecturerBtn">Add Lecturer</Button>
       </div>
     </div>
   );

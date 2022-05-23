@@ -122,3 +122,27 @@ input:-webkit-autofill{
   margin-left: 4%;
   padding: 1%;
 }
+.navOptions{
+  position: relative;
+  left: 25%;
+  margin-top: 45%;
+  font-size: 1.2rem;
+}
+.navIcon{
+  margin-right:3%;
+  margin-left: 7%;
+}
+.navItem{
+  height: 3rem;
+}
+.navItem:hover{
+  background-color: #c4c4c4;
+  cursor: pointer;
+  border-radius: 15% 0 0 15%;
+}
+.navItemPosition{
+  margin: 4% 0;
+}
+.navItem:not(:last-child){
+  margin-bottom: 10%;
+}
