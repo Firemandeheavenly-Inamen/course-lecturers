@@ -133,16 +133,25 @@ input:-webkit-autofill{
   margin-left: 7%;
 }
 .navItem{
-  height: 3rem;
+  min-height: 3rem;
 }
 .navItem:hover{
+  background-color: #f7f3f32c;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.active{
+  min-height: 3rem;
   background-color: #c4c4c4;
   cursor: pointer;
-  border-radius: 15% 0 0 15%;
+  border-radius: 50px;
 }
 .navItemPosition{
   margin: 4% 0;
 }
 .navItem:not(:last-child){
+  margin-bottom: 10%;
+}
+.active:not(:last-child){
   margin-bottom: 10%;
 }
