@@ -49,7 +49,7 @@ input:-webkit-autofill{
   margin-top: 0.3%;
   margin-left: 4%;
 }
-.addLecturerPane {
+.lecturerPane {
   position: absolute;
   left: 19%;
   top: 1%;
@@ -154,4 +154,8 @@ input:-webkit-autofill{
 }
 .active:not(:last-child){
   margin-bottom: 10%;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
