@@ -135,6 +135,9 @@ input:-webkit-autofill{
 .navItem{
   min-height: 3rem;
 }
+li.navItem{
+  margin-bottom: 10%;
+}
 .navItem:hover{
   background-color: #f7f3f32c;
   cursor: pointer;

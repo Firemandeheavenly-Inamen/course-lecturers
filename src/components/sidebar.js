@@ -42,7 +42,7 @@ const SideBar = () => {
           <ul className="navItems">
           <Link to="/">
               <li onClick={toggleClick1}
-                className={clicked1? 'active':'navItem'}
+                className={clicked1? 'navItem active':'navItem'}
               >
                 <div className="navItemPosition">
                   <IoMdSchool className="navIcon" />
@@ -52,7 +52,7 @@ const SideBar = () => {
               </Link>
             <Link to="/lectures">
               <li onClick={toggleClick2}
-                className={clicked2? 'active': 'navItem'}
+                className={clicked2? 'navItem active': 'navItem'}
               >
                 <div className="navItemPosition">
                   <GiTeacher className="navIcon" />
@@ -61,7 +61,7 @@ const SideBar = () => {
               </li>
             </Link>
             <li onClick={toggleClick3}
-                className={clicked3? 'active': 'navItem'}
+                className={clicked3? 'navItem active': 'navItem'}
             >
               <div className="navItemPosition">
                 <BiBook className="navIcon" />
@@ -69,7 +69,7 @@ const SideBar = () => {
               </div>
             </li>
             <li onClick={toggleClick4}
-                className={clicked4? 'active': 'navItem'}
+                className={clicked4? 'navItem active': 'navItem'}
             >
               <div className="navItemPosition">
                 <AiOutlineSchedule className="navIcon" />
