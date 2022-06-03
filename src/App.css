@@ -143,12 +143,13 @@ li.navItem{
   cursor: pointer;
   border-radius: 50px;
 }
-.active{
+.active, .active:hover{
   min-height: 3rem;
   background-color: #c4c4c4;
   cursor: pointer;
   border-radius: 50px;
 }
+
 .navItemPosition{
   margin: 4% 0;
 }
