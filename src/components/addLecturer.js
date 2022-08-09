@@ -1,6 +1,14 @@
 import { Sidebar } from "./sidebar";
-
+import {useState} from 'react'
 function AddLecturer() {
+  const [lecturerDetails,setLecturerDetails]= useState({
+    fullname : '',
+    gender : '',
+    email: '',
+    phoneNumber: '',
+    degree: '',
+    masters: '',
+  })
   return (
     <div className=" flex min-h-screen">
       <Sidebar />
@@ -36,6 +44,8 @@ function AddLecturer() {
                         type="text"
                         placeholder="Name"
                         aria-label="Full name"
+                        value={lecturerDetails.fullname}
+                        onChange= {e=> setLecturerDetails({...lecturerDetails, fullname: e.target.value})}
                       />
                     </div>
                   </form>
@@ -46,6 +56,8 @@ function AddLecturer() {
                         className="form-control "
                         placeholder="Gender"
                         aria-label="Gender"
+                        value={lecturerDetails.gender}
+                        onChange= {e=> setLecturerDetails({...lecturerDetails, gender: e.target.value})}
                       />
                     </div>
                   </form>
@@ -67,6 +79,8 @@ function AddLecturer() {
                         type="text"
                         placeholder="Email"
                         aria-label="Email"
+                        value={lecturerDetails.email}
+                        onChange= {e=> setLecturerDetails({...lecturerDetails, email: e.target.value})}
                       />
                     </div>
                   </form>
@@ -77,6 +91,8 @@ function AddLecturer() {
                         type="text"
                         placeholder="Phone Number"
                         aria-label="Phone Number"
+                        value={lecturerDetails.phoneNumber}
+                        onChange= {e=> setLecturerDetails({...lecturerDetails, phoneNumber: e.target.value})}
                       />
                     </div>
                   </form>
@@ -98,6 +114,8 @@ function AddLecturer() {
                         type="text"
                         placeholder="Degree"
                         aria-label="Degree"
+                        value={lecturerDetails.degree}
+                        onChange= {e=> setLecturerDetails({...lecturerDetails, degree: e.target.value})}
                       />
                     </div>
                   </form>
@@ -108,6 +126,8 @@ function AddLecturer() {
                         type="text"
                         placeholder="Masters"
                         aria-label="Masters"
+                        value={lecturerDetails.masters}
+                        onChange= {e=> setLecturerDetails({...lecturerDetails, masters: e.target.value})}
                       />
                     </div>
                   </form>
