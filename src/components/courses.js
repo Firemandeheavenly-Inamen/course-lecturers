@@ -1,7 +1,15 @@
-import React from 'react'
 import { Sidebar } from "./sidebar";
-
+import {useState} from 'react'
 function Courses() {
+  const [courseDetails,setCourseDetails]= useState({
+    courseName : '',
+    yearGroup : '',
+    courseType: '',
+    numberOfStudents: '',
+   })
+   const postCourseDetails = ()=>{
+    console.log(courseDetails)
+   }
   return (
     <div className=" flex min-h-screen">
       <Sidebar />
@@ -37,6 +45,8 @@ function Courses() {
                         type="text"
                         placeholder="Course Name"
                         aria-label="Course name"
+                        value={courseDetails.courseName}
+                        onChange={e=>setCourseDetails({...courseDetails,courseName:e.target.value})}
                       />
                     </div>
                   </form>
@@ -47,6 +57,8 @@ function Courses() {
                         className="form-control "
                         placeholder="Year Group"
                         aria-label="Year Group"
+                        value={courseDetails.yearGroup}
+                        onChange={e=>setCourseDetails({...courseDetails,yearGroup:e.target.value})}
                       />
                     </div>
                   </form>
@@ -71,6 +83,8 @@ function Courses() {
                         type="text"
                         placeholder="Course Type"
                         aria-label="Course Type"
+                        value={courseDetails.courseType}
+                        onChange={e=>setCourseDetails({...courseDetails,courseType:e.target.value})}
                       />
                     </div>
                   </form>
@@ -81,6 +95,8 @@ function Courses() {
                         type="text"
                         placeholder="Number Of Students"
                         aria-label="Number Of Students"
+                        value={courseDetails.numberOfStudents}
+                        onChange={e=>setCourseDetails({...courseDetails,numberOfStudents:e.target.value})}
                       />
                     </div>
                   </form>
@@ -90,7 +106,7 @@ function Courses() {
 
             {/* third div for divider (button side)*/}
             <div className="lsubmit-btn">
-              <button type="button" className=" add-lecturer-btn">
+              <button onClick={postCourseDetails} type="button" className=" add-lecturer-btn">
                 Add Course
               </button>
             </div>

@@ -9,6 +9,9 @@ function AddLecturer() {
     degree: '',
     masters: '',
   })
+  const postLecturerDetails=()=>{
+    console.log(lecturerDetails)
+  }
   return (
     <div className=" flex min-h-screen">
       <Sidebar />
@@ -137,7 +140,7 @@ function AddLecturer() {
 
             {/* third div for divider (button side)*/}
             <div className="lsubmit-btn">
-              <button type="button" className=" add-lecturer-btn">
+              <button onClick={postLecturerDetails} type="button" className=" add-lecturer-btn">
                 Add Lecturer
               </button>
             </div>
