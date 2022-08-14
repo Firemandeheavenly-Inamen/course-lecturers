@@ -5,12 +5,14 @@ import Lecturers from "./components/lecturers";
 import Courses from "./components/courses";
 import Schedules from "./components/schedules";
 import Settings from "./components/settings";
+import { Sidebar } from "./components/sidebar";
 
 function App() {
   return (
     <div>
       
-
+      <div className=" flex min-h-screen">
+      <Sidebar />
       <Routes>
         <Route path="/" element={<AddLecturer />}></Route>
         <Route path="/lecturers" element={<Lecturers />}></Route>
@@ -19,6 +21,7 @@ function App() {
         <Route path="/settings" element={<Settings />}></Route>
         
       </Routes>
+      </div>
     </div>
   );
 }
