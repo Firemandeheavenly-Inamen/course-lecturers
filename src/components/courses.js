@@ -1,5 +1,6 @@
 import { Sidebar } from "./sidebar";
-import {useState} from 'react'
+import React, {useState} from 'react'
+import axios from "axios";
 function Courses() {
   const [courseDetails,setCourseDetails]= useState({
     courseName : '',
@@ -7,8 +8,17 @@ function Courses() {
     courseType: '',
     numberOfStudents: '',
    })
-   const postCourseDetails = ()=>{
+   const config = {
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+    }
+  };
+   const postCourseDetails = async ()=>{
     console.log(courseDetails)
+    await axios.get('https://reaper-api.herokuapp.com/members',config).then(response => {
+      console.log(response.data)
+    });
    }
   return (
     <div className=" flex min-h-screen">
