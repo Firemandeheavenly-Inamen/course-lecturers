@@ -11,8 +11,8 @@ function Courses() {
     console.log(courseDetails)
    }
   return (
-    <div className=" flex min-h-screen">
-      <Sidebar />
+    
+     
       <div className="flex-1 p-8">
         <div className="container mx-auto mt-12">
           {/* divider for speration of lines */}
@@ -113,7 +113,7 @@ function Courses() {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
 

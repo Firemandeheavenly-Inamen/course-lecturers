@@ -1,13 +1,23 @@
 @tailwind base;
 @tailwind components;
 
-.nav-items{
-  @apply flex flex-row items-center h-12 transform 
-          hover:translate-x-2 transition-transform ease-in 
-          duration-200 text-white hover:bg-white 
-          active:bg-violet-700 hover:rounded-l-full 
-          hover:text-black mb-4 ml-4
+
+.active {
+  @apply  bg-white rounded-l-full 
+          flex flex-row items-center h-12 transform  
+          duration-200  
+          hover:rounded-l-full px-2 active:text-blue-700
+          text-black mb-4 ml-2
+         
 }
+
+.navtext{
+  @apply   flex flex-row items-center h-12 transform 
+          hover:translate-x-2 transition-transform ease-in 
+          duration-200  my-4 mx-2
+          hover:rounded-l-full  
+}
+
 .add-lecturer-btn{
   @apply  py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 
           focus:outline-none bg-white rounded-lg border border-gray-200 
